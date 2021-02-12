@@ -10,7 +10,7 @@ class ScanCard {
         /** @type {HTMLElement} */
         this.el = el;
         this.digitsEl = this.el.querySelector("#digits");
-        this.digits = [...this.el.querySelectorAll("#digits use")].sort((a,b) => a.id > b.id);
+        this.digits = [...this.el.querySelectorAll("#digits use")].sort((a,b) => a.id.localeCompare(b.id));
         this.symbols = [...this.el.querySelectorAll("symbol")].filter(x => x.id.startsWith('sc')).sort((a,b) => a.id > b.id).map(x => x.id);
     }
 
@@ -46,6 +46,7 @@ class ScanCard {
             codeString = codeString;
         }
         codeString = reverse(codeString);
+        console.log(codeString);
         return codeString;
     }
 
