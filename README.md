@@ -1,7 +1,7 @@
 # hk-scancard
 A simple webapp that displays a HomeKit setup code in a HomeKit-compatible scancard format. This is mostly helpful for HAP device makers.
 
-<img width="300" alt="Demo screenshot" src="demo-screenshot.png" />
+<a href="https://aaaidan.github.io/hk-scancard/"><img width="300" alt="Demo screenshot" src="demo-screenshot.png" /></a>
 
 [🔗 Live Demo](https://aaaidan.github.io/hk-scancard/)
 
