@@ -11,7 +11,7 @@ class ScanCard {
         this.el = el;
         this.digitsEl = this.el.querySelector("#digits");
         this.digits = [...this.el.querySelectorAll("#digits use")].sort((a,b) => a.id.localeCompare(b.id));
-        this.symbols = [...this.el.querySelectorAll("symbol")].filter(x => x.id.startsWith('sc')).sort((a,b) => a.id > b.id).map(x => x.id);
+        this.symbols = [...this.el.querySelectorAll("symbol")].filter(x => x.id.startsWith('sc')).sort((a,b) => a.id.localeCompare(b.id)).map(x => x.id);
     }
 
     /**
